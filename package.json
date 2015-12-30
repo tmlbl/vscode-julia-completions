@@ -11,7 +11,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.sayHello"
+		"onCommand:extension.sayHello",
+        "onLanguage:julia"
 	],
 	"main": "./out/src/extension",
 	"contributes": {
@@ -27,5 +28,8 @@
 	"devDependencies": {
 		"typescript": "^1.6.2",
 		"vscode": "0.10.x"
-	}
+	},
+    "dependencies": {
+        "vscode-languageclient": "0.10.x"
+    }
 }
